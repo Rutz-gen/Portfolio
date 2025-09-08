@@ -64,4 +64,49 @@ body {
 
 /* Footer */
 footer {
-    font
+    font-size: 0.9rem;
+}
+
+/* Buttons */
+.btn-outline-light {
+    border-color: #4a90e2;
+    color: #4a90e2;
+    transition: all 0.3s;
+}
+
+.btn-outline-light:hover {
+    background-color: #4a90e2;
+    color: #fff;
+}
+
+/* Lists */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Links */
+a {
+    transition: all 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-collapse {
+        background-color: #1f1f1f;
+    }
+}
