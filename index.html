@@ -1,72 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Rutuja's Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <header>
-        <h1>Hi, I'm Rutuja!</h1>
-        <p>Aspiring Software Engineer | Problem Solver | Learner</p>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Rutuja</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <img src="C:\Users\HP\OneDrive\Documents\Id size photo.jpg" alt="Rutuja's Photo" class="profile-pic" />
-        <p>Hi! I'm Rutuja, a passionate learner aiming to become a Software Engineer. I enhance my coding skills by solving real-world problems and developing practical applications that create value for people.</p>
-    </section>
-
-    <section id="skills">
-        <h2>My Skills</h2>
-        <ul>
-            <li>🐍 Python</li>
-            <li>💻 C++</li>
-            <li>🌐 HTML & CSS</li>
-            <li>🖥 Git & GitHub</li>
-        </ul>
-    </section>
-
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project">
-            <h3>Expense Tracker</h3>
-            <p>A Python-based application that helps users record and manage income and expenses with category-wise tracking, budget alerts, and visual reports using charts and graphs. It highlights skills in Python, SQL/file handling, and data visualization for practical financial management.</p>
-            <a href="https://github.com/Rutz-gen/Expense-Tracker.git" target="_blank">View Code</a>
+    <header class="text-center py-5" style="background: linear-gradient(135deg, #1f1f1f, #2a2a2a);">
+        <div data-aos="fade-down">
+            <h1>Hi, I'm Rutuja!</h1>
+            <p class="lead">Aspiring Software Engineer | Problem Solver | Learner</p>
         </div>
-        <div class="project">
-            <h3>Portfolio Website</h3>
-            <p>This portfolio showcases my projects and skills with a clean, responsive, and modern design aimed at potential employers and collaborators.</p>
-            <a href="https://rutz-gen.github.io/Portfolio/" target="_blank">View Website</a>
+    </header>
+
+    <section id="about" class="text-center py-5 bg-dark text-light">
+        <div class="container" data-aos="fade-up">
+            <h2>About Me</h2>
+            <img src="C:\Users\HP\OneDrive\Documents\Id size photo.jpg" alt="Rutuja's Photo" class="profile-pic my-4">
+            <p>Hi! I'm Rutuja, a passionate learner aiming to become a Software Engineer. I enhance my coding skills by solving real-world problems and developing practical applications that create value for people.</p>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>📞 8793991731</p>
-        <p>Email: <a href="mailto:rutujadudhane1204@gmail.com">rutujadudhane1204@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/rutuja-dudhane-928b4326b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Visit my profile</a></p>
-        <p>GitHub: <a href="https://github.com/rutz-gen" target="_blank">My GitHub</a></p>
+    <section id="skills" class="py-5 bg-secondary text-light">
+        <div class="container" data-aos="fade-up">
+            <h2 class="text-center mb-4">My Skills</h2>
+            <div class="row justify-content-center g-3">
+                <div class="col-6 col-md-3 text-center skill-item">🐍 Python</div>
+                <div class="col-6 col-md-3 text-center skill-item">💻 C++</div>
+                <div class="col-6 col-md-3 text-center skill-item">🌐 HTML & CSS</div>
+                <div class="col-6 col-md-3 text-center skill-item">🖥 Git & GitHub</div>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Rutuja. All rights reserved.</p>
+    <section id="projects" class="py-5 bg-dark text-light">
+        <div class="container" data-aos="fade-up">
+            <h2 class="text-center mb-5">My Projects</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card bg-secondary text-light project-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Expense Tracker</h5>
+                            <p class="card-text">A Python-based application that helps users record and manage income and expenses with category-wise tracking, budget alerts, and visual reports using charts and graphs.</p>
+                            <a href="https://github.com/Rutz-gen/Expense-Tracker.git" target="_blank" class="btn btn-primary">View Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card bg-secondary text-light project-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Portfolio Website</h5>
+                            <p class="card-text">A modern, responsive portfolio website that showcases my projects and skills aimed at potential employers and collaborators.</p>
+                            <a href="https://rutz-gen.github.io/Portfolio/" target="_blank" class="btn btn-primary">View Website</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-secondary text-light">
+        <div class="container text-center" data-aos="fade-up">
+            <h2>Contact Me</h2>
+            <p>📞 8793991731</p>
+            <p>Email: <a href="mailto:rutujadudhane1204@gmail.com" class="text-decoration-none text-light">rutujadudhane1204@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/rutuja-dudhane-928b4326b" target="_blank" class="text-decoration-none text-light">Visit my profile</a></p>
+            <p>GitHub: <a href="https://github.com/rutz-gen" target="_blank" class="text-decoration-none text-light">My GitHub</a></p>
+        </div>
+    </section>
+
+    <footer class="text-center py-3 bg-dark text-light">
+        <small>&copy; 2025 Rutuja. All rights reserved.</small>
     </footer>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        // Smooth scrolling
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Smooth scrolling for nav links
         document.querySelectorAll('nav a').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -76,6 +124,5 @@
             });
         });
     </script>
-
 </body>
 </html>
