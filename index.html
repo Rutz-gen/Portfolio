@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Rutuja's Portfolio</title>
+    <title>Rutuja Umesh Dudhane | Portfolio</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -14,74 +14,113 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Rutuja</a>
+            <a class="navbar-brand" href="#">Rutuja Dudhane</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#summary">Summary</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
+                <button id="theme-toggle" class="btn btn-outline-light ms-3">🌙</button>
             </div>
         </div>
     </nav>
 
-    <header class="text-center py-5" style="background: linear-gradient(135deg, #1f1f1f, #2a2a2a);">
+    <!-- Header -->
+    <header class="text-center py-5 bg-dark text-light header-bg">
         <div data-aos="fade-down">
             <h1>Hi, I'm Rutuja!</h1>
-            <p class="lead">Aspiring Software Engineer | Problem Solver | Learner</p>
+            <p id="typed-text" class="lead"></p>
+            <a href="Rutuja_Umesh_Dudhane_Resume.pdf" download class="btn btn-outline-light mt-3">
+                <i class="fa fa-download"></i> Download Resume
+            </a>
         </div>
     </header>
 
-    <section id="about" class="text-center py-5 bg-dark text-light">
-        <div class="container" data-aos="fade-up">
-            <h2>About Me</h2>
-            <img src="C:\Users\HP\OneDrive\Documents\Id size photo.jpg" alt="Rutuja's Photo" class="profile-pic my-4">
-            <p>Hi! I'm Rutuja, a passionate learner aiming to become a Software Engineer. I enhance my coding skills by solving real-world problems and developing practical applications that create value for people.</p>
+    <!-- Professional Summary -->
+    <section id="summary" class="py-5 bg-secondary text-light">
+        <div class="container" data-aos="fade-right">
+            <h2>Professional Summary</h2>
+            <p>Motivated and detail-oriented B.Tech graduate specializing in Electronics and Telecommunication. Seeking a Software Tester position to apply manual and automation testing skills, SQL knowledge, and defect tracking expertise to enhance product quality and advance technical capabilities. Known for analytical thinking, creativity, and a strong commitment to integrity and learning.</p>
         </div>
     </section>
 
-    <section id="skills" class="py-5 bg-secondary text-light">
+    <!-- Education Timeline -->
+    <section id="education" class="py-5 bg-dark text-light">
         <div class="container" data-aos="fade-up">
-            <h2 class="text-center mb-4">My Skills</h2>
-            <div class="row justify-content-center g-3">
-                <div class="col-6 col-md-3 text-center skill-item">🐍 Python</div>
-                <div class="col-6 col-md-3 text-center skill-item">💻 C++</div>
-                <div class="col-6 col-md-3 text-center skill-item">🌐 HTML & CSS</div>
-                <div class="col-6 col-md-3 text-center skill-item">🖥 Git & GitHub</div>
+            <h2 class="text-center mb-4">Education</h2>
+            <ul class="timeline list-unstyled">
+                <li>
+                    <div><strong>2022 - 2026</strong></div>
+                    <div>B.Tech in Electronics and Telecommunication Engineering, Dr. J. J. Magdum College Of Engineering</div>
+                    <div>CGPA: 7.89</div>
+                </li>
+                <li>
+                    <div><strong>2022</strong></div>
+                    <div>Higher Secondary Certificate at Sharad Science and Commerce Junior College</div>
+                    <div>Percentage: 76%</div>
+                </li>
+                <li>
+                    <div><strong>2020</strong></div>
+                    <div>Secondary School Certificate at Laxmidevi Girl’s School</div>
+                    <div>Percentage: 91.80%</div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="py-5 bg-secondary text-light">
+        <div class="container" data-aos="fade-left">
+            <h2 class="text-center mb-4">Technical Skills</h2>
+            <div class="row g-3 justify-content-center">
+                <div class="col-6 col-md-3 text-center skill-item">Python</div>
+                <div class="col-6 col-md-3 text-center skill-item">HTML & CSS</div>
+                <div class="col-6 col-md-3 text-center skill-item">C / C++</div>
+                <div class="col-6 col-md-3 text-center skill-item">JavaScript</div>
+                <div class="col-6 col-md-3 text-center skill-item">SQL</div>
+                <div class="col-6 col-md-3 text-center skill-item">VS Code</div>
             </div>
         </div>
     </section>
 
+    <!-- Projects -->
     <section id="projects" class="py-5 bg-dark text-light">
         <div class="container" data-aos="fade-up">
-            <h2 class="text-center mb-5">My Projects</h2>
+            <h2 class="text-center mb-4">Projects</h2>
             <div class="row g-4">
                 <div class="col-md-6">
                     <div class="card bg-secondary text-light project-card">
                         <div class="card-body">
-                            <h5 class="card-title">Expense Tracker</h5>
-                            <p class="card-text">A Python-based application that helps users record and manage income and expenses with category-wise tracking, budget alerts, and visual reports using charts and graphs.</p>
-                            <a href="https://github.com/Rutz-gen/Expense-Tracker.git" target="_blank" class="btn btn-primary">View Code</a>
+                            <h5 class="card-title">Smart Door Lock System</h5>
+                            <p class="card-text">An Arduino-based security system with keypad authentication, servo motor control, and buzzer alerts for enhanced access control. Technologies: NodeMCU, Python, Servo motor, LCD.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="card bg-secondary text-light project-card">
                         <div class="card-body">
-                            <h5 class="card-title">Portfolio Website</h5>
-                            <p class="card-text">A modern, responsive portfolio website that showcases my projects and skills aimed at potential employers and collaborators.</p>
-                            <a href="https://rutz-gen.github.io/Portfolio/" target="_blank" class="btn btn-primary">View Website</a>
+                            <h5 class="card-title">Expense Tracker</h5>
+                            <p class="card-text">A Python-based app for managing income and expenses, offering budget alerts and visual reports through charts and graphs for better financial insights.</p>
                         </div>
                     </div>
                 </div>
@@ -89,18 +128,66 @@
         </div>
     </section>
 
-    <section id="contact" class="py-5 bg-secondary text-light">
-        <div class="container text-center" data-aos="fade-up">
-            <h2>Contact Me</h2>
-            <p>📞 8793991731</p>
-            <p>Email: <a href="mailto:rutujadudhane1204@gmail.com" class="text-decoration-none text-light">rutujadudhane1204@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/rutuja-dudhane-928b4326b" target="_blank" class="text-decoration-none text-light">Visit my profile</a></p>
-            <p>GitHub: <a href="https://github.com/rutz-gen" target="_blank" class="text-decoration-none text-light">My GitHub</a></p>
+    <!-- Achievements -->
+    <section id="achievements" class="py-5 bg-secondary text-light">
+        <div class="container" data-aos="fade-right">
+            <h2 class="text-center mb-4">Achievements</h2>
+            <ul>
+                <li><i class="fa fa-trophy"></i> Event Coordinator at FUSIONX 2025</li>
+                <li><i class="fa fa-hand-holding-heart"></i> Volunteer at National Service Scheme (NSS)</li>
+            </ul>
         </div>
     </section>
 
-    <footer class="text-center py-3 bg-dark text-light">
-        <small>&copy; 2025 Rutuja. All rights reserved.</small>
+    <!-- Certificates -->
+    <section id="certificates" class="py-5 bg-dark text-light">
+        <div class="container" data-aos="fade-up">
+            <h2 class="text-center mb-4">Certificates</h2>
+            <ul>
+                <li><i class="fa fa-certificate"></i> Python Full Stack Development - PrepGrad</li>
+                <li><i class="fa fa-certificate"></i> Webpage Designing using HTML, CSS & Bootstrap - Plato Minds</li>
+                <li><i class="fa fa-certificate"></i> IoT - AVR Technologies</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="py-5 bg-secondary text-light">
+        <div class="container" data-aos="fade-left">
+            <h2 class="text-center mb-4">About Me</h2>
+            <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic mb-4">
+            <p><i class="fa fa-map-marker-alt"></i> Address: At/p Chh. Shivaji Nagar, Hupari, District-Kolhapur</p>
+            <p><i class="fa fa-language"></i> Languages: English, Marathi, Hindi</p>
+            <p><i class="fa fa-birthday-cake"></i> Date of Birth: 12/01/2004</p>
+            <p><i class="fa fa-user"></i> Marital Status: Single</p>
+            <h4 class="mt-4">Strengths</h4>
+            <ul>
+                <li>Strong analytical skills and organization</li>
+                <li>Creativity, problem solving, decision making</li>
+                <li>Sincerity and integrity in tasks</li>
+                <li>Quick learner</li>
+            </ul>
+            <h4 class="mt-4">Weakness</h4>
+            <p>Difficulty in saying 'no'</p>
+            <h4 class="mt-4">Hobbies & Interests</h4>
+            <p><i class="fa fa-book"></i> Reading | <i class="fa fa-paint-brush"></i> Drawing | <i class="fa fa-image"></i> Painting | <i class="fa fa-scissors"></i> Crafting</p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-5 bg-dark text-light">
+        <div class="container text-center" data-aos="fade-up">
+            <h2>Contact Me</h2>
+            <p><i class="fa fa-phone"></i> +91-8793991731</p>
+            <p><i class="fa fa-envelope"></i> <a href="mailto:rutujadudhane1204@gmail.com" class="text-decoration-none text-light">rutujadudhane1204@gmail.com</a></p>
+            <p><i class="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/rutuja-dudhane-928b4326b" target="_blank" class="text-decoration-none text-light">Visit LinkedIn</a></p>
+            <p><i class="fa fa-github"></i> <a href="https://github.com/rutz-gen" target="_blank" class="text-decoration-none text-light">My GitHub</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-3 bg-secondary text-light">
+        <small>&copy; 2025 Rutuja Umesh Dudhane. All rights reserved.</small>
     </footer>
 
     <!-- Bootstrap JS -->
@@ -114,7 +201,7 @@
             once: true
         });
 
-        // Smooth scrolling for nav links
+        // Smooth scrolling
         document.querySelectorAll('nav a').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -123,6 +210,32 @@
                 });
             });
         });
+
+        // Light/Dark Mode Toggle
+        const toggle = document.getElementById('theme-toggle');
+        toggle.addEventListener('click', () => {
+            if (document.documentElement.getAttribute('data-bs-theme') === 'dark') {
+                document.documentElement.setAttribute('data-bs-theme', 'light');
+                toggle.textContent = '🌙';
+            } else {
+                document.documentElement.setAttribute('data-bs-theme', 'dark');
+                toggle.textContent = '☀';
+            }
+        });
+
+        // Typing Effect
+        const text = "Aspiring Software Engineer | QA Enthusiast | Problem Solver";
+        let index = 0;
+        const speed = 50;
+        function typeWriter() {
+            if (index < text.length) {
+                document.getElementById("typed-text").innerHTML += text.charAt(index);
+                index++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+        window.onload = typeWriter;
     </script>
+
 </body>
 </html>
