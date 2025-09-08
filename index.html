@@ -5,18 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Rutuja's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
         <h1>Hi, I'm Rutuja!</h1>
-        <p>Aspiring Software Engineer</p>
+        <p>Aspiring Software Engineer | Problem Solver | Learner</p>
     </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
     <section id="about">
         <h2>About Me</h2>
         <img src="C:\Users\HP\OneDrive\Documents\Id size photo.jpg" alt="Rutuja's Photo" class="profile-pic" />
-        <p>Hi! I'm Rutuja, a passionate learner aiming to become a Software Engineer. I am enhancing my coding skills by solving real-world problems and developing practical applications that create value for people.</p>
+        <p>Hi! I'm Rutuja, a passionate learner aiming to become a Software Engineer. I enhance my coding skills by solving real-world problems and developing practical applications that create value for people.</p>
     </section>
 
     <section id="skills">
@@ -33,18 +43,19 @@
         <h2>My Projects</h2>
         <div class="project">
             <h3>Expense Tracker</h3>
-            <p>The Expense Tracker is a Python-based application that helps users record and manage income and expenses with category-wise tracking. It supports budget setting, alerts, and generates visual reports using charts and graphs for better financial insights. This project highlights skills in Python programming, SQL/file handling, and data visualization for practical financial management.</p>
+            <p>A Python-based application that helps users record and manage income and expenses with category-wise tracking, budget alerts, and visual reports using charts and graphs. It highlights skills in Python, SQL/file handling, and data visualization for practical financial management.</p>
             <a href="https://github.com/Rutz-gen/Expense-Tracker.git" target="_blank">View Code</a>
         </div>
         <div class="project">
             <h3>Portfolio Website</h3>
-            <p>This is my portfolio site where I showcase my projects and skills!</p>
+            <p>This portfolio showcases my projects and skills with a clean, responsive, and modern design aimed at potential employers and collaborators.</p>
             <a href="https://rutz-gen.github.io/Portfolio/" target="_blank">View Website</a>
         </div>
     </section>
 
     <section id="contact">
-        <h2>8793991731</h2>
+        <h2>Contact Me</h2>
+        <p>📞 8793991731</p>
         <p>Email: <a href="mailto:rutujadudhane1204@gmail.com">rutujadudhane1204@gmail.com</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/rutuja-dudhane-928b4326b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Visit my profile</a></p>
         <p>GitHub: <a href="https://github.com/rutz-gen" target="_blank">My GitHub</a></p>
@@ -53,6 +64,18 @@
     <footer>
         <p>&copy; 2025 Rutuja. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 
 </body>
 </html>
