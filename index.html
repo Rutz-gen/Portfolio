@@ -23,21 +23,21 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
         <div class="container">
-            <a class="navbar-brand" href="#">Rutuja Dudhane</a>
+            <a class="navbar-brand fw-bold" href="#">Rutuja Dudhane</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav text-uppercase fw-semibold">
                     <li class="nav-item"><a class="nav-link" href="#summary">Summary</a></li>
                     <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
                     <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
                 <button id="theme-toggle" class="btn btn-outline-light ms-3">🌙</button>
@@ -48,40 +48,33 @@
     <!-- Header -->
     <header class="text-center py-5 bg-dark text-light header-bg">
         <div data-aos="fade-down">
-            <h1>Hi, I'm Rutuja!</h1>
-            <p id="typed-text" class="lead"></p>
+            <h1 class="fw-bold">Hi, I'm Rutuja!</h1>
+            <p id="typed-text" class="lead fst-italic"></p>
         </div>
     </header>
 
     <!-- Professional Summary -->
     <section id="summary" class="py-5 bg-secondary text-light">
         <div class="container" data-aos="fade-right">
-            <h2>Professional Summary</h2>
-            <p>Motivated and detail-oriented B.Tech graduate specializing in Electronics and Telecommunication. Seeking a Software Tester position to apply manual and automation testing skills, SQL knowledge, and defect tracking expertise to enhance product quality and advance technical capabilities. Known for analytical thinking, creativity, and a strong commitment to integrity and learning.</p>
+            <h2 class="text-center mb-4">Professional Summary</h2>
+            <p class="text-start">
+                Motivated and detail-oriented B.Tech graduate specializing in Electronics and Telecommunication. 
+                Seeking a Software Tester position to apply manual and automation testing skills, SQL knowledge, 
+                and defect tracking expertise to enhance product quality. Known for analytical thinking, creativity, 
+                and a strong commitment to integrity and learning.
+            </p>
         </div>
     </section>
 
-    <!-- Education Timeline -->
+    <!-- Education -->
     <section id="education" class="py-5 bg-dark text-light">
         <div class="container" data-aos="fade-up">
             <h2 class="text-center mb-4">Education</h2>
-            <ul class="timeline list-unstyled">
-                <li>
-                    <div><strong>2022 - 2026</strong></div>
-                    <div>B.Tech in Electronics and Telecommunication Engineering, Dr. J. J. Magdum College Of Engineering</div>
-                    <div>CGPA: 7.89</div>
-                </li>
-                <li>
-                    <div><strong>2022</strong></div>
-                    <div>Higher Secondary Certificate at Sharad Science and Commerce Junior College</div>
-                    <div>Percentage: 76%</div>
-                </li>
-                <li>
-                    <div><strong>2020</strong></div>
-                    <div>Secondary School Certificate at Laxmidevi Girl’s School</div>
-                    <div>Percentage: 91.80%</div>
-                </li>
-            </ul>
+            <div class="timeline">
+                <p><strong>2022 - 2026:</strong> B.Tech in Electronics & Telecommunication Engineering, Dr. J. J. Magdum College Of Engineering — CGPA: 7.89</p>
+                <p><strong>2022:</strong> Higher Secondary Certificate, Sharad Science and Commerce Junior College — 76%</p>
+                <p><strong>2020:</strong> Secondary School Certificate, Laxmidevi Girl’s School — 91.80%</p>
+            </div>
         </div>
     </section>
 
@@ -89,14 +82,14 @@
     <section id="skills" class="py-5 bg-secondary text-light">
         <div class="container" data-aos="fade-left">
             <h2 class="text-center mb-4">Technical Skills</h2>
-            <div class="row g-3 justify-content-center">
-                <div class="col-6 col-md-3 text-center skill-item">Python</div>
-                <div class="col-6 col-md-3 text-center skill-item">HTML & CSS</div>
-                <div class="col-6 col-md-3 text-center skill-item">C / C++</div>
-                <div class="col-6 col-md-3 text-center skill-item">JavaScript</div>
-                <div class="col-6 col-md-3 text-center skill-item">SQL</div>
-                <div class="col-6 col-md-3 text-center skill-item">VS Code</div>
-            </div>
+            <ul class="row g-3 list-unstyled text-center">
+                <li class="col-6 col-md-3">Python</li>
+                <li class="col-6 col-md-3">HTML & CSS</li>
+                <li class="col-6 col-md-3">C / C++</li>
+                <li class="col-6 col-md-3">JavaScript</li>
+                <li class="col-6 col-md-3">SQL</li>
+                <li class="col-6 col-md-3">VS Code</li>
+            </ul>
         </div>
     </section>
 
@@ -106,18 +99,24 @@
             <h2 class="text-center mb-4">Projects</h2>
             <div class="row g-4">
                 <div class="col-md-6">
-                    <div class="card bg-secondary text-light project-card">
+                    <div class="card bg-secondary text-light h-100 shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title">Smart Door Lock System</h5>
-                            <p class="card-text">An Arduino-based security system with keypad authentication, servo motor control, and buzzer alerts for enhanced access control. Technologies: NodeMCU, Python, Servo motor, LCD.</p>
+                            <p class="card-text text-start">
+                                Arduino-based security system with keypad authentication, servo motor control, 
+                                and buzzer alerts. Technologies: NodeMCU, Python, Servo motor, LCD.
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="card bg-secondary text-light project-card">
+                    <div class="card bg-secondary text-light h-100 shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title">Expense Tracker</h5>
-                            <p class="card-text">A Python-based app for managing income and expenses, offering budget alerts and visual reports through charts and graphs for better financial insights.</p>
+                            <p class="card-text text-start">
+                                Python-based app for managing income and expenses with budget alerts 
+                                and visual reports (charts & graphs).
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -129,9 +128,9 @@
     <section id="achievements" class="py-5 bg-secondary text-light">
         <div class="container" data-aos="fade-right">
             <h2 class="text-center mb-4">Achievements</h2>
-            <ul>
-                <li><i class="fa fa-trophy"></i> Event Coordinator at FUSIONX 2025</li>
-                <li><i class="fa fa-hand-holding-heart"></i> Volunteer at National Service Scheme (NSS)</li>
+            <ul class="text-start">
+                <li>Event Coordinator — FUSIONX 2025</li>
+                <li>Volunteer — National Service Scheme (NSS)</li>
             </ul>
         </div>
     </section>
@@ -140,45 +139,47 @@
     <section id="certificates" class="py-5 bg-dark text-light">
         <div class="container" data-aos="fade-up">
             <h2 class="text-center mb-4">Certificates</h2>
-            <ul>
-                <li><i class="fa fa-certificate"></i> Python Full Stack Development - PrepGrad</li>
-                <li><i class="fa fa-certificate"></i> Webpage Designing using HTML, CSS & Bootstrap - Plato Minds</li>
-                <li><i class="fa fa-certificate"></i> IoT - AVR Technologies</li>
+            <ul class="text-start">
+                <li>Python Full Stack Development — PrepGrad</li>
+                <li>Webpage Designing with HTML, CSS & Bootstrap — Plato Minds</li>
+                <li>IoT — AVR Technologies</li>
             </ul>
         </div>
     </section>
 
-    <!-- About Me -->
+    <!-- About -->
     <section id="about" class="py-5 bg-secondary text-light">
         <div class="container" data-aos="fade-left">
             <h2 class="text-center mb-4">About Me</h2>
-            <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic mb-4">
-            <p><i class="fa fa-map-marker-alt"></i> Address: At/p Chh. Shivaji Nagar, Hupari, District-Kolhapur</p>
-            <p><i class="fa fa-language"></i> Languages: English, Marathi, Hindi</p>
-            <p><i class="fa fa-birthday-cake"></i> Date of Birth: 12/01/2004</p>
+            <div class="text-center mb-4">
+                <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic rounded-circle shadow-sm" style="width:150px;height:150px;object-fit:cover;">
+            </div>
+            <p><strong>Address:</strong> At/p Chh. Shivaji Nagar, Hupari, District-Kolhapur</p>
+            <p><strong>Languages:</strong> English, Marathi, Hindi</p>
+            <p><strong>Date of Birth:</strong> 12/01/2004</p>
 
             <div class="row mt-4">
                 <div class="col-md-6">
                     <h4>Strengths</h4>
                     <ul>
-                        <li>Strong analytical and problem-solving skills, enabling efficient troubleshooting and decision-making.</li>
-                        <li>Excellent organizational abilities to manage multiple tasks and meet deadlines effectively.</li>
-                        <li>Creative thinker, always open to learning and implementing new technologies and methods.</li>
-                        <li>Integrity and sincerity in all professional responsibilities, ensuring reliable and consistent results.</li>
-                        <li>Quick learner, able to adapt to new tools and processes with minimal guidance.</li>
+                        <li>Strong analytical and problem-solving skills.</li>
+                        <li>Excellent organizational abilities to manage tasks.</li>
+                        <li>Creative thinker, eager to learn new technologies.</li>
+                        <li>Integrity and sincerity in responsibilities.</li>
+                        <li>Quick learner, adaptable to new tools.</li>
                     </ul>
                 </div>
                 <div class="col-md-6">
                     <h4>Areas for Improvement</h4>
                     <ul>
-                        <li>Tendency to take on multiple tasks simultaneously, which is being addressed through better time management and prioritization.</li>
-                        <li>Occasionally finds it challenging to say 'no', leading to workload imbalance; actively working on setting boundaries and improving focus.</li>
+                        <li>Improving time management when handling multiple tasks.</li>
+                        <li>Learning to set boundaries to avoid workload imbalance.</li>
                     </ul>
                 </div>
             </div>
 
             <h4 class="mt-4">Hobbies & Interests</h4>
-            <p><i class="fa fa-book"></i> Reading | <i class="fa fa-paint-brush"></i> Drawing | <i class="fa fa-image"></i> Painting | <i class="fa fa-scissors"></i> Crafting</p>
+            <p>Reading | Drawing | Painting | Crafting</p>
         </div>
     </section>
 
@@ -186,10 +187,10 @@
     <section id="contact" class="py-5 bg-dark text-light">
         <div class="container text-center" data-aos="fade-up">
             <h2>Contact Me</h2>
-            <p><i class="fa fa-phone"></i> +91-8793991731</p>
-            <p><i class="fa fa-envelope"></i> <a href="mailto:rutujadudhane1204@gmail.com" class="text-decoration-none text-light">rutujadudhane1204@gmail.com</a></p>
-            <p><i class="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/rutuja-dudhane-928b4326b" target="_blank" class="text-decoration-none text-light">Visit LinkedIn</a></p>
-            <p><i class="fa fa-github"></i> <a href="https://github.com/rutz-gen" target="_blank" class="text-decoration-none text-light">My GitHub</a></p>
+            <p><strong>Phone:</strong> +91-8793991731</p>
+            <p><strong>Email:</strong> <a href="mailto:rutujadudhane1204@gmail.com" class="text-decoration-none text-light">rutujadudhane1204@gmail.com</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rutuja-dudhane-928b4326b" target="_blank" class="text-decoration-none text-light">Visit Profile</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/rutz-gen" target="_blank" class="text-decoration-none text-light">My Projects</a></p>
         </div>
     </section>
 
@@ -204,18 +205,13 @@
     <!-- AOS Animation JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({
-            duration: 1000,
-            once: true
-        });
+        AOS.init({ duration: 1000, once: true });
 
         // Smooth scrolling
         document.querySelectorAll('nav a').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
             });
         });
 
@@ -244,6 +240,5 @@
         }
         window.onload = typeWriter;
     </script>
-
 </body>
 </html>
