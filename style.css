@@ -5,6 +5,7 @@ body {
     color: var(--bs-body-color);
     scroll-behavior: smooth;
     line-height: 1.6;
+    transition: background-color 0.4s, color 0.4s;
 }
 
 /* Theme Variables */
@@ -55,8 +56,8 @@ section h2 {
 }
 
 /* Timeline for Education */
-.timeline p {
-    margin-bottom: 15px;
+.timeline li {
+    margin-bottom: 20px;
     padding: 12px 15px;
     background-color: var(--bs-card-bg);
     border-radius: 10px;
@@ -64,10 +65,10 @@ section h2 {
     line-height: 1.5;
 }
 
-/* Skills Section */
+/* Skills & Tools Section */
 .skill-item {
     background-color: var(--bs-card-bg);
-    padding: 15px 20px;
+    padding: 12px 18px;
     border-radius: 25px;
     transition: transform 0.3s, background-color 0.3s;
     cursor: default;
@@ -90,16 +91,6 @@ section h2 {
 .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
-
-/* Lists */
-ul {
-    padding-left: 20px;
-}
-
-ul li {
-    margin-bottom: 10px;
-    line-height: 1.5;
 }
 
 /* Footer */
@@ -136,7 +127,7 @@ a:hover {
     section {
         text-align: center;
     }
-    .timeline p {
+    .timeline li {
         text-align: left;
     }
 }
