@@ -1,4 +1,4 @@
-/* General Styles (default: dark theme) */
+/* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--bs-body-bg);
@@ -27,6 +27,8 @@ body {
 .header-bg {
     background: url('images/background.jpg') center center / cover no-repeat fixed;
     color: #fff;
+    padding-top: 6rem; /* adjust spacing under navbar */
+    padding-bottom: 2rem; /* compact spacing */
     text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
 }
 
